@@ -21,8 +21,7 @@ export class AppComponent implements OnInit {
   resourceUrl:SafeResourceUrl;
   constructor(private  domSanitizer:DomSanitizer)
   {
-    var unsafeUrl="javascript:alert()";
-    
+    var unsafeUrl="javascript:alert()"; 
     this.html = this.domSanitizer.bypassSecurityTrustHtml(this.htmlSnippet);
     this.url = this.domSanitizer.bypassSecurityTrustUrl(unsafeUrl);
     this.style=this.domSanitizer.bypassSecurityTrustStyle("color:red");
