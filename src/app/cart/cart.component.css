@@ -1,0 +1,17 @@
+.flex-card
+{
+    display: flex;
+}
+
+.flex-card label{
+    width: 400px;
+    list-style-type: none;
+    box-shadow: 3px 5px #888888;
+    border:1px solid;
+    margin:5px;
+    cursor:pointer;
+}
+
+.flex-card label > input{
+    float:right;
+}
