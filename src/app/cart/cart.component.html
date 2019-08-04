@@ -1,0 +1,14 @@
+<div class="flex-card">
+<label *ngFor="let item of products"> 
+<input  type="checkbox" [(ngModel)]="cart_contents[item.item_no]" (click)="selectItem($event)" value="{{item.item_no}}"> 
+<ul>
+  
+  <li>Product Code: {{item.item_no}}</li>
+  <li>Product Name: {{item.item_name}}</li>
+  <li>Product Description: {{item.item_description}}</li>
+  <li>Max Quantity: {{item.item_quantity}}</li>
+  <li>Price: {{item.item_quantity | currency}}</li>
+</ul>  
+</label>
+<button type="button" (click)="reviewCart()">Proceed to Payment</button>
+</div>
