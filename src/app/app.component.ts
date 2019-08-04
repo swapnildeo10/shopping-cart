@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     
     this.html = this.domSanitizer.bypassSecurityTrustHtml(this.htmlSnippet);
     this.url = this.domSanitizer.bypassSecurityTrustUrl(unsafeUrl);
-    this.style=this.domSanitizer.bypassSecurityTrustStyle("color:red");
+    this.style=this.domSanitizer.bypassSecurityTrustStyle("color:blue");
     this.resourceUrl = this.domSanitizer.bypassSecurityTrustResourceUrl("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js");
   }
   ngOnInit()
