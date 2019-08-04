@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   html:SafeHtml;
   style:SafeStyle;
   resourceUrl:SafeResourceUrl;
+  
   constructor(private  domSanitizer:DomSanitizer)
   {
     var unsafeUrl="javascript:alert()"; 
